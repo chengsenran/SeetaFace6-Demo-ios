@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F0D4A1B26328EC100B6609C /* ViedoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D4A1A26328EC100B6609C /* ViedoViewController.mm */; };
+		1F0D4A2F2632A27300B6609C /* beginViedoCompareViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D4A2E2632A27300B6609C /* beginViedoCompareViewController.mm */; };
+		1F233BC92634FDD000358C78 /* FaceRecognizerManagers.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F233BC52634FDD000358C78 /* FaceRecognizerManagers.mm */; };
+		1F233BCA2634FDD000358C78 /* FFVideoCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F233BC72634FDD000358C78 /* FFVideoCapturer.m */; };
+		1F546691262D4BC3005D6E33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F546690262D4BC3005D6E33 /* AppDelegate.m */; };
+		1F546694262D4BC3005D6E33 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F546693262D4BC3005D6E33 /* SceneDelegate.m */; };
+		1F546697262D4BC3005D6E33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F546696262D4BC3005D6E33 /* ViewController.m */; };
+		1F54669A262D4BC3005D6E33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F546698262D4BC3005D6E33 /* Main.storyboard */; };
+		1F54669C262D4BC5005D6E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F54669B262D4BC5005D6E33 /* Assets.xcassets */; };
+		1F54669F262D4BC5005D6E33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F54669D262D4BC5005D6E33 /* LaunchScreen.storyboard */; };
+		1F5466A2262D4BC5005D6E33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5466A1262D4BC5005D6E33 /* main.m */; };
+		1F5466AC262D4BC5005D6E33 /* SeetaFace6_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5466AB262D4BC5005D6E33 /* SeetaFace6_DemoTests.m */; };
+		1F5466B7262D4BC5005D6E33 /* SeetaFace6_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5466B6262D4BC5005D6E33 /* SeetaFace6_DemoUITests.m */; };
+		1F5466CF262D50B9005D6E33 /* CSRImageViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F5466CE262D50B9005D6E33 /* CSRImageViewController.mm */; };
+		1F546731262D52CE005D6E33 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546730262D52CE005D6E33 /* Accelerate.framework */; };
+		1F54675A262D546F005D6E33 /* SeetaAgePredictor600.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546742262D5462005D6E33 /* SeetaAgePredictor600.framework */; };
+		1F54675B262D546F005D6E33 /* SeetaAgePredictor600.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546742262D5462005D6E33 /* SeetaAgePredictor600.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F54675C262D5470005D6E33 /* SeetaAuthorize.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546743262D5462005D6E33 /* SeetaAuthorize.framework */; };
+		1F54675D262D5470005D6E33 /* SeetaAuthorize.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546743262D5462005D6E33 /* SeetaAuthorize.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F54675E262D5471005D6E33 /* SeetaEyeStateDetector200.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546740262D5462005D6E33 /* SeetaEyeStateDetector200.framework */; };
+		1F54675F262D5471005D6E33 /* SeetaEyeStateDetector200.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546740262D5462005D6E33 /* SeetaEyeStateDetector200.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F546760262D5473005D6E33 /* SeetaFaceAntiSpoofingX600.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546745262D5462005D6E33 /* SeetaFaceAntiSpoofingX600.framework */; };
+		1F546761262D5473005D6E33 /* SeetaFaceAntiSpoofingX600.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546745262D5462005D6E33 /* SeetaFaceAntiSpoofingX600.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F546762262D5474005D6E33 /* SeetaFaceDetector600.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546741262D5462005D6E33 /* SeetaFaceDetector600.framework */; };
+		1F546763262D5474005D6E33 /* SeetaFaceDetector600.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546741262D5462005D6E33 /* SeetaFaceDetector600.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F546764262D5476005D6E33 /* SeetaFaceLandmarker600.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546749262D5462005D6E33 /* SeetaFaceLandmarker600.framework */; };
+		1F546765262D5476005D6E33 /* SeetaFaceLandmarker600.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546749262D5462005D6E33 /* SeetaFaceLandmarker600.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F546766262D5477005D6E33 /* SeetaFaceRecognizer610.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546744262D5462005D6E33 /* SeetaFaceRecognizer610.framework */; };
+		1F546767262D5477005D6E33 /* SeetaFaceRecognizer610.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546744262D5462005D6E33 /* SeetaFaceRecognizer610.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F546768262D5479005D6E33 /* SeetaFaceTracking600.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F54674A262D5462005D6E33 /* SeetaFaceTracking600.framework */; };
+		1F546769262D5479005D6E33 /* SeetaFaceTracking600.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F54674A262D5462005D6E33 /* SeetaFaceTracking600.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F54676A262D547A005D6E33 /* SeetaGenderPredictor600.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546746262D5462005D6E33 /* SeetaGenderPredictor600.framework */; };
+		1F54676B262D547A005D6E33 /* SeetaGenderPredictor600.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546746262D5462005D6E33 /* SeetaGenderPredictor600.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F54676E262D547F005D6E33 /* SeetaMaskDetector200.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546747262D5462005D6E33 /* SeetaMaskDetector200.framework */; };
+		1F54676F262D547F005D6E33 /* SeetaMaskDetector200.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546747262D5462005D6E33 /* SeetaMaskDetector200.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F546770262D5480005D6E33 /* SeetaPoseEstimation600.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F54674C262D5462005D6E33 /* SeetaPoseEstimation600.framework */; };
+		1F546771262D5480005D6E33 /* SeetaPoseEstimation600.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F54674C262D5462005D6E33 /* SeetaPoseEstimation600.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F546772262D5482005D6E33 /* SeetaQualityAssessor300.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F54674B262D5462005D6E33 /* SeetaQualityAssessor300.framework */; };
+		1F546773262D5482005D6E33 /* SeetaQualityAssessor300.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F54674B262D5462005D6E33 /* SeetaQualityAssessor300.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F546774262D5483005D6E33 /* tennis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546748262D5462005D6E33 /* tennis.framework */; };
+		1F546775262D5483005D6E33 /* tennis.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F546748262D5462005D6E33 /* tennis.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F5467A526300482005D6E33 /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F5467A326300482005D6E33 /* UIImage+OpenCV.mm */; };
+		1F5467BB26300BE2005D6E33 /* assert in Resources */ = {isa = PBXBuildFile; fileRef = 1F5467BA26300BE2005D6E33 /* assert */; };
+		1F5467C22630198C005D6E33 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5467A8263004C2005D6E33 /* opencv2.framework */; };
+		1F5467C9263019FB005D6E33 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5467C8263019FB005D6E33 /* libjpeg.a */; };
+		1F5467E026326457005D6E33 /* CSRImageCompareViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F5467DF26326457005D6E33 /* CSRImageCompareViewController.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F5466A8262D4BC5005D6E33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F546684262D4BC3005D6E33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F54668B262D4BC3005D6E33;
+			remoteInfo = "SeetaFace6-Demo";
+		};
+		1F5466B3262D4BC5005D6E33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F546684262D4BC3005D6E33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F54668B262D4BC3005D6E33;
+			remoteInfo = "SeetaFace6-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F546714262D527E005D6E33 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F546763262D5474005D6E33 /* SeetaFaceDetector600.framework in Embed Frameworks */,
+				1F54675B262D546F005D6E33 /* SeetaAgePredictor600.framework in Embed Frameworks */,
+				1F546767262D5477005D6E33 /* SeetaFaceRecognizer610.framework in Embed Frameworks */,
+				1F546765262D5476005D6E33 /* SeetaFaceLandmarker600.framework in Embed Frameworks */,
+				1F54676F262D547F005D6E33 /* SeetaMaskDetector200.framework in Embed Frameworks */,
+				1F546769262D5479005D6E33 /* SeetaFaceTracking600.framework in Embed Frameworks */,
+				1F54675D262D5470005D6E33 /* SeetaAuthorize.framework in Embed Frameworks */,
+				1F54675F262D5471005D6E33 /* SeetaEyeStateDetector200.framework in Embed Frameworks */,
+				1F546775262D5483005D6E33 /* tennis.framework in Embed Frameworks */,
+				1F546761262D5473005D6E33 /* SeetaFaceAntiSpoofingX600.framework in Embed Frameworks */,
+				1F54676B262D547A005D6E33 /* SeetaGenderPredictor600.framework in Embed Frameworks */,
+				1F546773262D5482005D6E33 /* SeetaQualityAssessor300.framework in Embed Frameworks */,
+				1F546771262D5480005D6E33 /* SeetaPoseEstimation600.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1F0D4A1926328EC100B6609C /* ViedoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViedoViewController.h; sourceTree = "<group>"; };
+		1F0D4A1A26328EC100B6609C /* ViedoViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViedoViewController.mm; sourceTree = "<group>"; };
+		1F0D4A2D2632A27300B6609C /* beginViedoCompareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = beginViedoCompareViewController.h; sourceTree = "<group>"; };
+		1F0D4A2E2632A27300B6609C /* beginViedoCompareViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = beginViedoCompareViewController.mm; sourceTree = "<group>"; };
+		1F233BB02634F9C300358C78 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		1F233BC52634FDD000358C78 /* FaceRecognizerManagers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceRecognizerManagers.mm; sourceTree = "<group>"; };
+		1F233BC62634FDD000358C78 /* FFVideoCapturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFVideoCapturer.h; sourceTree = "<group>"; };
+		1F233BC72634FDD000358C78 /* FFVideoCapturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFVideoCapturer.m; sourceTree = "<group>"; };
+		1F233BC82634FDD000358C78 /* FaceRecognizerManagers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceRecognizerManagers.h; sourceTree = "<group>"; };
+		1F54668C262D4BC3005D6E33 /* SeetaFace6-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeetaFace6-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F54668F262D4BC3005D6E33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F546690262D4BC3005D6E33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F546692262D4BC3005D6E33 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		1F546693262D4BC3005D6E33 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		1F546695262D4BC3005D6E33 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1F546696262D4BC3005D6E33 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F546699262D4BC3005D6E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F54669B262D4BC5005D6E33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F54669E262D4BC5005D6E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F5466A0262D4BC5005D6E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F5466A1262D4BC5005D6E33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F5466A7262D4BC5005D6E33 /* SeetaFace6-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeetaFace6-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5466AB262D4BC5005D6E33 /* SeetaFace6_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeetaFace6_DemoTests.m; sourceTree = "<group>"; };
+		1F5466AD262D4BC5005D6E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F5466B2262D4BC5005D6E33 /* SeetaFace6-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeetaFace6-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5466B6262D4BC5005D6E33 /* SeetaFace6_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeetaFace6_DemoUITests.m; sourceTree = "<group>"; };
+		1F5466B8262D4BC5005D6E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F5466CD262D50B9005D6E33 /* CSRImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSRImageViewController.h; sourceTree = "<group>"; };
+		1F5466CE262D50B9005D6E33 /* CSRImageViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CSRImageViewController.mm; sourceTree = "<group>"; };
+		1F546730262D52CE005D6E33 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		1F546740262D5462005D6E33 /* SeetaEyeStateDetector200.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SeetaEyeStateDetector200.framework; path = ../../../../../../Downloads/sf6_ios_sdk/SeetaEyeStateDetector200.framework; sourceTree = "<group>"; };
+		1F546741262D5462005D6E33 /* SeetaFaceDetector600.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SeetaFaceDetector600.framework; path = ../../../../../../Downloads/sf6_ios_sdk/SeetaFaceDetector600.framework; sourceTree = "<group>"; };
+		1F546742262D5462005D6E33 /* SeetaAgePredictor600.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SeetaAgePredictor600.framework; path = ../../../../../../Downloads/sf6_ios_sdk/SeetaAgePredictor600.framework; sourceTree = "<group>"; };
+		1F546743262D5462005D6E33 /* SeetaAuthorize.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SeetaAuthorize.framework; path = ../../../../../../Downloads/sf6_ios_sdk/SeetaAuthorize.framework; sourceTree = "<group>"; };
+		1F546744262D5462005D6E33 /* SeetaFaceRecognizer610.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SeetaFaceRecognizer610.framework; path = ../../../../../../Downloads/sf6_ios_sdk/SeetaFaceRecognizer610.framework; sourceTree = "<group>"; };
+		1F546745262D5462005D6E33 /* SeetaFaceAntiSpoofingX600.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SeetaFaceAntiSpoofingX600.framework; path = ../../../../../../Downloads/sf6_ios_sdk/SeetaFaceAntiSpoofingX600.framework; sourceTree = "<group>"; };
+		1F546746262D5462005D6E33 /* SeetaGenderPredictor600.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SeetaGenderPredictor600.framework; path = ../../../../../../Downloads/sf6_ios_sdk/SeetaGenderPredictor600.framework; sourceTree = "<group>"; };
+		1F546747262D5462005D6E33 /* SeetaMaskDetector200.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SeetaMaskDetector200.framework; path = ../../../../../../Downloads/sf6_ios_sdk/SeetaMaskDetector200.framework; sourceTree = "<group>"; };
+		1F546748262D5462005D6E33 /* tennis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tennis.framework; path = ../../../../../../Downloads/sf6_ios_sdk/tennis.framework; sourceTree = "<group>"; };
+		1F546749262D5462005D6E33 /* SeetaFaceLandmarker600.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SeetaFaceLandmarker600.framework; path = ../../../../../../Downloads/sf6_ios_sdk/SeetaFaceLandmarker600.framework; sourceTree = "<group>"; };
+		1F54674A262D5462005D6E33 /* SeetaFaceTracking600.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SeetaFaceTracking600.framework; path = ../../../../../../Downloads/sf6_ios_sdk/SeetaFaceTracking600.framework; sourceTree = "<group>"; };
+		1F54674B262D5462005D6E33 /* SeetaQualityAssessor300.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SeetaQualityAssessor300.framework; path = ../../../../../../Downloads/sf6_ios_sdk/SeetaQualityAssessor300.framework; sourceTree = "<group>"; };
+		1F54674C262D5462005D6E33 /* SeetaPoseEstimation600.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SeetaPoseEstimation600.framework; path = ../../../../../../Downloads/sf6_ios_sdk/SeetaPoseEstimation600.framework; sourceTree = "<group>"; };
+		1F5467A326300482005D6E33 /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		1F5467A426300482005D6E33 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		1F5467A8263004C2005D6E33 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		1F5467BA26300BE2005D6E33 /* assert */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assert; sourceTree = "<group>"; };
+		1F5467C8263019FB005D6E33 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		1F5467DE26326457005D6E33 /* CSRImageCompareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSRImageCompareViewController.h; sourceTree = "<group>"; };
+		1F5467DF26326457005D6E33 /* CSRImageCompareViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CSRImageCompareViewController.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F546689262D4BC3005D6E33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F546764262D5476005D6E33 /* SeetaFaceLandmarker600.framework in Frameworks */,
+				1F546774262D5483005D6E33 /* tennis.framework in Frameworks */,
+				1F54675E262D5471005D6E33 /* SeetaEyeStateDetector200.framework in Frameworks */,
+				1F5467C22630198C005D6E33 /* opencv2.framework in Frameworks */,
+				1F54676E262D547F005D6E33 /* SeetaMaskDetector200.framework in Frameworks */,
+				1F5467C9263019FB005D6E33 /* libjpeg.a in Frameworks */,
+				1F546766262D5477005D6E33 /* SeetaFaceRecognizer610.framework in Frameworks */,
+				1F546772262D5482005D6E33 /* SeetaQualityAssessor300.framework in Frameworks */,
+				1F546762262D5474005D6E33 /* SeetaFaceDetector600.framework in Frameworks */,
+				1F546768262D5479005D6E33 /* SeetaFaceTracking600.framework in Frameworks */,
+				1F54675C262D5470005D6E33 /* SeetaAuthorize.framework in Frameworks */,
+				1F54676A262D547A005D6E33 /* SeetaGenderPredictor600.framework in Frameworks */,
+				1F546760262D5473005D6E33 /* SeetaFaceAntiSpoofingX600.framework in Frameworks */,
+				1F546770262D5480005D6E33 /* SeetaPoseEstimation600.framework in Frameworks */,
+				1F546731262D52CE005D6E33 /* Accelerate.framework in Frameworks */,
+				1F54675A262D546F005D6E33 /* SeetaAgePredictor600.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5466A4262D4BC5005D6E33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5466AF262D4BC5005D6E33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F546683262D4BC3005D6E33 = {
+			isa = PBXGroup;
+			children = (
+				1F5467C8263019FB005D6E33 /* libjpeg.a */,
+				1F5467BA26300BE2005D6E33 /* assert */,
+				1F54668E262D4BC3005D6E33 /* SeetaFace6-Demo */,
+				1F5466AA262D4BC5005D6E33 /* SeetaFace6-DemoTests */,
+				1F5466B5262D4BC5005D6E33 /* SeetaFace6-DemoUITests */,
+				1F54668D262D4BC3005D6E33 /* Products */,
+				1F54672F262D52CE005D6E33 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1F54668D262D4BC3005D6E33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F54668C262D4BC3005D6E33 /* SeetaFace6-Demo.app */,
+				1F5466A7262D4BC5005D6E33 /* SeetaFace6-DemoTests.xctest */,
+				1F5466B2262D4BC5005D6E33 /* SeetaFace6-DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F54668E262D4BC3005D6E33 /* SeetaFace6-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				1F5467A426300482005D6E33 /* UIImage+OpenCV.h */,
+				1F5467A326300482005D6E33 /* UIImage+OpenCV.mm */,
+				1F5466D4262D5246005D6E33 /* FrameWork */,
+				1F54668F262D4BC3005D6E33 /* AppDelegate.h */,
+				1F546690262D4BC3005D6E33 /* AppDelegate.m */,
+				1F546692262D4BC3005D6E33 /* SceneDelegate.h */,
+				1F546693262D4BC3005D6E33 /* SceneDelegate.m */,
+				1F546695262D4BC3005D6E33 /* ViewController.h */,
+				1F546696262D4BC3005D6E33 /* ViewController.m */,
+				1F546698262D4BC3005D6E33 /* Main.storyboard */,
+				1F54669B262D4BC5005D6E33 /* Assets.xcassets */,
+				1F54669D262D4BC5005D6E33 /* LaunchScreen.storyboard */,
+				1F5466A0262D4BC5005D6E33 /* Info.plist */,
+				1F5466A1262D4BC5005D6E33 /* main.m */,
+				1F5466CD262D50B9005D6E33 /* CSRImageViewController.h */,
+				1F5466CE262D50B9005D6E33 /* CSRImageViewController.mm */,
+				1F5467DE26326457005D6E33 /* CSRImageCompareViewController.h */,
+				1F5467DF26326457005D6E33 /* CSRImageCompareViewController.mm */,
+				1F0D4A1926328EC100B6609C /* ViedoViewController.h */,
+				1F0D4A1A26328EC100B6609C /* ViedoViewController.mm */,
+				1F0D4A2D2632A27300B6609C /* beginViedoCompareViewController.h */,
+				1F0D4A2E2632A27300B6609C /* beginViedoCompareViewController.mm */,
+				1F233BC82634FDD000358C78 /* FaceRecognizerManagers.h */,
+				1F233BC52634FDD000358C78 /* FaceRecognizerManagers.mm */,
+				1F233BC62634FDD000358C78 /* FFVideoCapturer.h */,
+				1F233BC72634FDD000358C78 /* FFVideoCapturer.m */,
+			);
+			path = "SeetaFace6-Demo";
+			sourceTree = "<group>";
+		};
+		1F5466AA262D4BC5005D6E33 /* SeetaFace6-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F5466AB262D4BC5005D6E33 /* SeetaFace6_DemoTests.m */,
+				1F5466AD262D4BC5005D6E33 /* Info.plist */,
+			);
+			path = "SeetaFace6-DemoTests";
+			sourceTree = "<group>";
+		};
+		1F5466B5262D4BC5005D6E33 /* SeetaFace6-DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F5466B6262D4BC5005D6E33 /* SeetaFace6_DemoUITests.m */,
+				1F5466B8262D4BC5005D6E33 /* Info.plist */,
+			);
+			path = "SeetaFace6-DemoUITests";
+			sourceTree = "<group>";
+		};
+		1F5466D4262D5246005D6E33 /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				1F5467A8263004C2005D6E33 /* opencv2.framework */,
+				1F546742262D5462005D6E33 /* SeetaAgePredictor600.framework */,
+				1F546743262D5462005D6E33 /* SeetaAuthorize.framework */,
+				1F546740262D5462005D6E33 /* SeetaEyeStateDetector200.framework */,
+				1F546745262D5462005D6E33 /* SeetaFaceAntiSpoofingX600.framework */,
+				1F546741262D5462005D6E33 /* SeetaFaceDetector600.framework */,
+				1F546749262D5462005D6E33 /* SeetaFaceLandmarker600.framework */,
+				1F546744262D5462005D6E33 /* SeetaFaceRecognizer610.framework */,
+				1F54674A262D5462005D6E33 /* SeetaFaceTracking600.framework */,
+				1F546746262D5462005D6E33 /* SeetaGenderPredictor600.framework */,
+				1F546747262D5462005D6E33 /* SeetaMaskDetector200.framework */,
+				1F54674C262D5462005D6E33 /* SeetaPoseEstimation600.framework */,
+				1F54674B262D5462005D6E33 /* SeetaQualityAssessor300.framework */,
+				1F546748262D5462005D6E33 /* tennis.framework */,
+			);
+			path = FrameWork;
+			sourceTree = "<group>";
+		};
+		1F54672F262D52CE005D6E33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F233BB02634F9C300358C78 /* libc++abi.tbd */,
+				1F546730262D52CE005D6E33 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F54668B262D4BC3005D6E33 /* SeetaFace6-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F5466BB262D4BC5005D6E33 /* Build configuration list for PBXNativeTarget "SeetaFace6-Demo" */;
+			buildPhases = (
+				1F546688262D4BC3005D6E33 /* Sources */,
+				1F546689262D4BC3005D6E33 /* Frameworks */,
+				1F54668A262D4BC3005D6E33 /* Resources */,
+				1F546714262D527E005D6E33 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SeetaFace6-Demo";
+			productName = "SeetaFace6-Demo";
+			productReference = 1F54668C262D4BC3005D6E33 /* SeetaFace6-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F5466A6262D4BC5005D6E33 /* SeetaFace6-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F5466BE262D4BC5005D6E33 /* Build configuration list for PBXNativeTarget "SeetaFace6-DemoTests" */;
+			buildPhases = (
+				1F5466A3262D4BC5005D6E33 /* Sources */,
+				1F5466A4262D4BC5005D6E33 /* Frameworks */,
+				1F5466A5262D4BC5005D6E33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F5466A9262D4BC5005D6E33 /* PBXTargetDependency */,
+			);
+			name = "SeetaFace6-DemoTests";
+			productName = "SeetaFace6-DemoTests";
+			productReference = 1F5466A7262D4BC5005D6E33 /* SeetaFace6-DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F5466B1262D4BC5005D6E33 /* SeetaFace6-DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F5466C1262D4BC5005D6E33 /* Build configuration list for PBXNativeTarget "SeetaFace6-DemoUITests" */;
+			buildPhases = (
+				1F5466AE262D4BC5005D6E33 /* Sources */,
+				1F5466AF262D4BC5005D6E33 /* Frameworks */,
+				1F5466B0262D4BC5005D6E33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F5466B4262D4BC5005D6E33 /* PBXTargetDependency */,
+			);
+			name = "SeetaFace6-DemoUITests";
+			productName = "SeetaFace6-DemoUITests";
+			productReference = 1F5466B2262D4BC5005D6E33 /* SeetaFace6-DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F546684262D4BC3005D6E33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1F54668B262D4BC3005D6E33 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					1F5466A6262D4BC5005D6E33 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1F54668B262D4BC3005D6E33;
+					};
+					1F5466B1262D4BC5005D6E33 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1F54668B262D4BC3005D6E33;
+					};
+				};
+			};
+			buildConfigurationList = 1F546687262D4BC3005D6E33 /* Build configuration list for PBXProject "SeetaFace6-Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F546683262D4BC3005D6E33;
+			productRefGroup = 1F54668D262D4BC3005D6E33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F54668B262D4BC3005D6E33 /* SeetaFace6-Demo */,
+				1F5466A6262D4BC5005D6E33 /* SeetaFace6-DemoTests */,
+				1F5466B1262D4BC5005D6E33 /* SeetaFace6-DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F54668A262D4BC3005D6E33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5467BB26300BE2005D6E33 /* assert in Resources */,
+				1F54669F262D4BC5005D6E33 /* LaunchScreen.storyboard in Resources */,
+				1F54669C262D4BC5005D6E33 /* Assets.xcassets in Resources */,
+				1F54669A262D4BC3005D6E33 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5466A5262D4BC5005D6E33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5466B0262D4BC5005D6E33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F546688262D4BC3005D6E33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F0D4A2F2632A27300B6609C /* beginViedoCompareViewController.mm in Sources */,
+				1F546697262D4BC3005D6E33 /* ViewController.m in Sources */,
+				1F546691262D4BC3005D6E33 /* AppDelegate.m in Sources */,
+				1F5466A2262D4BC5005D6E33 /* main.m in Sources */,
+				1F5466CF262D50B9005D6E33 /* CSRImageViewController.mm in Sources */,
+				1F5467A526300482005D6E33 /* UIImage+OpenCV.mm in Sources */,
+				1F233BC92634FDD000358C78 /* FaceRecognizerManagers.mm in Sources */,
+				1F546694262D4BC3005D6E33 /* SceneDelegate.m in Sources */,
+				1F233BCA2634FDD000358C78 /* FFVideoCapturer.m in Sources */,
+				1F0D4A1B26328EC100B6609C /* ViedoViewController.mm in Sources */,
+				1F5467E026326457005D6E33 /* CSRImageCompareViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5466A3262D4BC5005D6E33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5466AC262D4BC5005D6E33 /* SeetaFace6_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5466AE262D4BC5005D6E33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5466B7262D4BC5005D6E33 /* SeetaFace6_DemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F5466A9262D4BC5005D6E33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F54668B262D4BC3005D6E33 /* SeetaFace6-Demo */;
+			targetProxy = 1F5466A8262D4BC5005D6E33 /* PBXContainerItemProxy */;
+		};
+		1F5466B4262D4BC5005D6E33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F54668B262D4BC3005D6E33 /* SeetaFace6-Demo */;
+			targetProxy = 1F5466B3262D4BC5005D6E33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F546698262D4BC3005D6E33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F546699262D4BC3005D6E33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F54669D262D4BC5005D6E33 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F54669E262D4BC5005D6E33 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F5466B9262D4BC5005D6E33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1F5466BA262D4BC5005D6E33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F5466BC262D4BC5005D6E33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6SHFUYV67L;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SeetaFace6-Demo/FrameWork",
+				);
+				INFOPLIST_FILE = "SeetaFace6-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SeetaFace6-Demo/FrameWork",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tele-hot.SeetaFace6-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F5466BD262D4BC5005D6E33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6SHFUYV67L;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SeetaFace6-Demo/FrameWork",
+				);
+				INFOPLIST_FILE = "SeetaFace6-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SeetaFace6-Demo/FrameWork",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tele-hot.SeetaFace6-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1F5466BF262D4BC5005D6E33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6SHFUYV67L;
+				INFOPLIST_FILE = "SeetaFace6-DemoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tele-hot.SeetaFace6-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeetaFace6-Demo.app/SeetaFace6-Demo";
+			};
+			name = Debug;
+		};
+		1F5466C0262D4BC5005D6E33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6SHFUYV67L;
+				INFOPLIST_FILE = "SeetaFace6-DemoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tele-hot.SeetaFace6-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeetaFace6-Demo.app/SeetaFace6-Demo";
+			};
+			name = Release;
+		};
+		1F5466C2262D4BC5005D6E33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6SHFUYV67L;
+				INFOPLIST_FILE = "SeetaFace6-DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tele-hot.SeetaFace6-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SeetaFace6-Demo";
+			};
+			name = Debug;
+		};
+		1F5466C3262D4BC5005D6E33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6SHFUYV67L;
+				INFOPLIST_FILE = "SeetaFace6-DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tele-hot.SeetaFace6-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SeetaFace6-Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F546687262D4BC3005D6E33 /* Build configuration list for PBXProject "SeetaFace6-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5466B9262D4BC5005D6E33 /* Debug */,
+				1F5466BA262D4BC5005D6E33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F5466BB262D4BC5005D6E33 /* Build configuration list for PBXNativeTarget "SeetaFace6-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5466BC262D4BC5005D6E33 /* Debug */,
+				1F5466BD262D4BC5005D6E33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F5466BE262D4BC5005D6E33 /* Build configuration list for PBXNativeTarget "SeetaFace6-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5466BF262D4BC5005D6E33 /* Debug */,
+				1F5466C0262D4BC5005D6E33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F5466C1262D4BC5005D6E33 /* Build configuration list for PBXNativeTarget "SeetaFace6-DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5466C2262D4BC5005D6E33 /* Debug */,
+				1F5466C3262D4BC5005D6E33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F546684262D4BC3005D6E33 /* Project object */;
+}
